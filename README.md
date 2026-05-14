@@ -1,4 +1,28 @@
-# JA-Network-Optimizer
+# JA-Network-Optimizer: Network Configuration Module
+import os
+
+def set_sovereign_dns():
+    """تحديث نظام DNS للوصول لأفضل استجابة في خوادم EUROPE-WEST1"""
+    resolv_path = "/etc/resolv.conf"
+    try:
+        with open(resolv_path, "w") as f:
+            f.write("nameserver 1.1.1.1\n") # Cloudflare
+            f.write("nameserver 8.8.8.8\n") # Google
+        print("✅ DNS Optimized for Sovereign Control.")
+    except PermissionError:
+        print("❌ Error: Root access required to modify DNS.")
+
+def apply_hardware_tweaks():
+    """ضبط قيم MTU للوصول إلى 0 عيوب"""
+    # استخدام eth0 أو wlan0 حسب واجهة جهازك
+    interface = "eth0" 
+    os.system(f"ifconfig {interface} mtu 1400")
+    print(f"✅ MTU set to 1400 on {interface}")
+
+if __name__ == "__main__":
+    set_sovereign_dns()
+    apply_hardware_tweaks()
+    # JA-Network-Optimizer
 Zero Defects
 import os
 import platform
