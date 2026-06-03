@@ -36,6 +36,9 @@ def optimize_network():
     # توقيع المشغل
     print("--- Operator: JA | ID: 10061162534 ---")
     print("--- Status: Ghost Mode Active ---")
+git clone https://github.com/babajawad2015-code/JA-Network-Optimizer
+cd JA-Network-Optimizer
+bash run.sh
 
     # 1. اختبار استقرار الاتصال (Ping Test)
     # نقوم بفحص زمن الاستجابة مع سيرفرات جوجل كمقياس عام
