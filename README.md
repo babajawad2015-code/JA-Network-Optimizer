@@ -158,7 +158,8 @@ def ghost_eye_monitor(uid="10061162534"):
     print(f"\n[!] Initializing Ghost Eye for Operator: JA")
     print(f"[!] Target: Garena Server Response Analysis")
     
-    # محاكاة تحليل استجابة السيرفر (Server Tick Rate)
+    # محاكاة تحليل استجابة السيرفر (Shttps://github.com/babajawad2015-code/JA-Network-Optimizer](https://github.com/babajawad2015-code/JA-Network-Optimizer).
+    erver Tick Rate)
     server_response_time = 0.042  # ما يعادل 42ms (استجابة ممتازة بفضل إعداداتك)
     
     if server_response_time < 0.050:
