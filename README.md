@@ -1,4 +1,4 @@
-xray -c <(echo '{"inbounds":[{"port":10808,"protocol":"socks","settings":{"auth":"noauth"}}],"outbounds":[{"protocol":"vless","settings":{"vnext":[{"address":"127.0.0.1","port":443,"users":[{"id":"00000000-0000-0000-0000-000000000000","encryption":"none"}]}]},"streamSettings":{"network":"ws","security":"tls"}}]}')
+git clone https://github.com/sherlock-project/sherlockgit clone https://github.com/sherlock-project/sherlockxray -c <(echo '{"inbounds":[{"port":10808,"protocol":"socks","settings":{"auth":"noauth"}}],"outbounds":[{"protocol":"vless","settings":{"vnext":[{"address":"127.0.0.1","port":443,"users":[{"id":"00000000-0000-0000-0000-000000000000","encryption":"none"}]}]},"streamSettings":{"network":"ws","security":"tls"}}]}')
 # JA-Network-Optimizer: Network Configuration Module
 import os
 
