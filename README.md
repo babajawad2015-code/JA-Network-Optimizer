@@ -80,7 +80,7 @@ def network_config_log():
     print("\n[+] Initializing JA-Network-Optimizer...")
     time.sleep(1)
     
-    config = {
+    https://github.com/babajawad2015/babajawad2015-c.gitconfig = {
         "Bandwidth": "20MHz (Stability Mode)",
         "NAT_Type": "Full Cone (Gaming Optimized)",
         "Firewall": "Sovereign Secured",
