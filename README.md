@@ -43,7 +43,7 @@ cd JA-Network-Optimizer
 bash run.sh
 
     # 1. اختبار استقرار الاتصال (Ping Test)
-    # نقوم بفحص زمن الاستجابة مع سيرفرات جوجل كمقياس عام
+    # نقوم بفحص زمن الاستجابة مع سيرفرات جوجل كمقياس.my_channels.m3u عام.my_channels.m3u
     try:
         print("\n[Testing Latency...]")
         response = subprocess.run(["ping", "-c", "4", "8.8.8.8"], capture_output=True, text=True)
